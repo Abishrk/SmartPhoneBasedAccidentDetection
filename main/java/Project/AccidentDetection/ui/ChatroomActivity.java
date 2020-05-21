@@ -261,7 +261,7 @@ public class ChatroomActivity extends AppCompatActivity implements SensorEventLi
             L1 = Max_detailcoeff_X + Max_detailcoeff_Y + Max_detailcoeff_Z;
             L2 = totalamplitude;
             Log.d(TAG, "L1 "+L1+"L2 "+L2 +"Avg50 "+ AvgLast50sample );
-            if(accelerometerresult.get(50) >= 6 && accelerometerresult.get(50) <=18  && AvgLast50sample < 0.1 && AvgLast15sample >= 16 && L2 <= 3100 && L1 >= 10)
+            if(accelerometerresult.get(50) >= 0.66 && accelerometerresult.get(50) <=1.8  && AvgLast50sample < 0.1 && AvgLast15sample >= 16 && L2 <= 3100 && L1 >= 10)
             {
 
                 Log.d(TAG,"Emergency msg");
